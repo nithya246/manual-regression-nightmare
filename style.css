@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+
+  color: #222;
+  line-height: 1.6;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(to right, #0f172a, #2563eb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero-content {
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  padding: 14px 28px;
+  border: none;
+  background: white;
+  color: #2563eb;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  transform: scale(1.05);
+}
+
+section {
+  padding: 70px 10%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #2563eb;
+  font-size: 2.2rem;
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+.stat-box {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stat-box h3 {
+  color: #2563eb;
+  font-size: 2rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.strategy-grid {
+     display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.strategy-card {
+  background: linear-gradient(to right, #2563eb, #1e40af);
+  color: white;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.pyramid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.ui {
+  width: 220px;
+}
+
+.integration {
+  width: 400px;
+}
+.unit {
+  width: 600px;
+}
+
+.pyramid div {
+  background: #2563eb;
+  color: white;
+  padding: 18px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.workflow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.flow-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.workflow span {
+  font-size: 2rem;
+  color: #2563eb;
+}
+
+.tools {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.tool {
+  background: white;
+  padding: 15px 25px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.conclusion {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 18px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background: #2563eb;
+  color: white;
+}
+
+footer {
+  background: #111827;
+   color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media(max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .integration {
+    width: 280px;
+  }
+
+  .unit {
+    width: 340px;
+  }
+}
